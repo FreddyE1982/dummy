@@ -14,3 +14,4 @@ NEVER USE! python - <<'PY'
 6. you can NOT use the python cli in the client. YOU CAN NOT USE "python -c" in the client! You CAN not use "PY" in the client! ALL of that will not work and lead to "command not found / Befehl nicht gefunden" errors. Instead create a temporary .py file containing the code you would have run in the python cli, and then run that file
 7. after you have finished the task successfully or had to stop doing the task: EXIT the mcp2term client and write what you did and what the result was into a "protocol.md" file. commit and pr ONLY that file!
 
+NEVER COMMIT CHANGES MADE IN THE CLIENT INTO THE LOCAL REPO!!!
