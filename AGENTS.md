@@ -7,7 +7,7 @@ IF YOU NEED TO EXECUTE PYTHON THEN YOU MUST DO SO BY CREATING A TEMPORY PYTHON F
 PYTHON IN ANY OTHER WAY..EVEN IF ANY OTHER INSTRUCTIONS SAY YOU CAN!!!
 
 IF YOU CAN NOT FINISH A TASK IN THE AVAILABLE TIME DO NOT ROLLBACK YOUR CHANGES!
-Note that "filetool" is not a programm or file to that can be found in any folder. It is a command integrated into the mcp2term client and can be used as explained in the clients intro message.
+Note that "filetool" is not a programm or file that can be found in any folder. It is a command integrated into the mcp2term client and can be used as explained in the clients intro message.
 
 NEVER USE! python - <<'PY'
 
