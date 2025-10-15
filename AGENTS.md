@@ -17,6 +17,8 @@ NEVER USE! python - <<'PY'
 4. after starting the client you will be shown a info message telling you how to use the client...treat this message as if it is a AGENTS.md file!!
 5. inside the client, search for any AGENTS.md in the current folder and its subfolders. read all of them. treat all the rules in those AGENTS.md files as binding as if they were in your own repo!!
 6. you can NOT use the python cli in the client. YOU CAN NOT USE "python -c" in the client! You CAN not use "PY" in the client! ALL of that will not work and lead to "command not found / Befehl nicht gefunden" errors. Instead create a temporary .py file containing the code you would have run in the python cli, and then run that file
+7. DO NOT use the following as they will crash the client: rg, cat
+
 
 
 
