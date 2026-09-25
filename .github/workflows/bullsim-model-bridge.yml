@@ -1,0 +1,21 @@
+name: BullSim Offline Model Bridge
+on:
+  push:
+    paths:
+      - '.github/workflows/bullsim-model-bridge.yml'
+  workflow_dispatch:
+jobs:
+  package:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Download offline MiniLM wheel
+        run: |
+          curl -L --fail --retry 3 -o gt_all_minilm_l6_v2-0.1.0-py3-none-any.whl "https://files.pythonhosted.org/packages/13/12/337765c63a9ad86e329668e156142e9755f5830eb26fd3ab540a7deab0bb/gt_all_minilm_l6_v2-0.1.0-py3-none-any.whl"
+          echo "b9a0018dff090c14865aa0996a89997e34aeadf10e400e766cb961230c58fa54  gt_all_minilm_l6_v2-0.1.0-py3-none-any.whl" | sha256sum -c -
+      - name: Upload bridge artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: bullsim-minilm-offline-wheel
+          path: gt_all_minilm_l6_v2-0.1.0-py3-none-any.whl
+          compression-level: 0
+          retention-days: 7
